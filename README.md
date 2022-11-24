@@ -2,8 +2,7 @@
 A short Python script that will help you to discover more infromation about your computer CPU, memory and battery.
 
 ## Project's Uses:
-The mail library used in this mini project is [psutil] (https://pypi.org/project/psutil/). 
-<br></br>
+The mail library used in this mini project is [psutil](https://pypi.org/project/psutil/). 
 
 With the help of the library mentioned above you will see after running the .py file:
 * the CPU user
