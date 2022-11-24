@@ -16,7 +16,7 @@ These information will be displayed as a Data Frame, using Python's library Pand
 
 After that, you will precisely see the RAM memory and how much is still available. 
 
-## The most important part of the project:
+## The most important part of the project :
 You will be able to see the battery's percentage in the last part of the code. With the help of the function __sec2hours__, you will also find out how many hours, minutes and seconds will take till the battery run out or if your device is charging.
 <br></br>
 
