@@ -3,8 +3,8 @@ import pandas as pd
 
 
 # Function that converts the number of seconds into minutes and hours
-def secs2hours(secs):
-    mm, ss = divmod(secs, 60)
+def sec2hours(sec):
+    mm, ss = divmod(sec, 60)
     hh, mm = divmod(mm, 60)
     return "%d:%02d:%02d" % (hh, mm, ss)
 
@@ -67,8 +67,8 @@ print("- Total memory = %.2f GB \n- Available = %.2f GB \n- Percent = %d \n- Use
 # Displaying the battery percentage and time remaining till discharge
 print("\nComputer's battery: ")
 battery = psutil.sensors_battery()
-time_to_charge = secs2hours(battery.secsleft)
+time_to_charge = sec2hours(battery.secsleft)
 if time_to_charge[0] == "-":
     print(f"Charge = {battery.percent}%, Time left = Is charging")
 else:
-    print("Charge = %s%%, Time left = %s" % (battery.percent, secs2hours(battery.secsleft)))
+    print("Charge = %s%%, Time left = %s" % (battery.percent, sec2hours(battery.secsleft)))
